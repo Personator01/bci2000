@@ -1,0 +1,9 @@
+﻿cl : Command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  StdAfx.cpp
+cl : Command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  XLDataExportReceiver.cpp
+  XLDataExportClient.cpp
+  GuidUtil.cpp
+  Generating Code...
+     Creating library ./Bin.Debug/XLDataExportClient.lib and object ./Bin.Debug/XLDataExportClient.exp
+  XLDataExportClient.vcxproj -> C:\Users\BCIcomputer01\Documents\BCI2000_rev1\src\private\SignalSource\NatusSignalSource92\DataExport_9.2\XLDataExportClient\.\Bin.Debug\XLDataExportClient.dll

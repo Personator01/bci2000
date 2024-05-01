@@ -1,0 +1,27 @@
+[06:08:50.222]--------------------------------------
+[06:08:50.222]---LOGGER START[EegDataSource.dll]----
+[06:08:50.222]---build date : Feb  6 2018 18:57:06
+[06:08:50.222]---dll ver    : V01.04
+[06:08:50.222]---cur. tick  : 0x0326F934
+[06:08:50.222]---log level=1/log func=ALL/folder=.\E12DSLog\
+[06:08:50.222]--------------------------------------
+[06:08:50.222][EEegDataSourceApp::Initialize]...
+[06:08:50.224][EDataSourceCtrl::ReaderModeInitialize]<D945AE50>...SelectDataSource(1)
+[06:11:59.512]--------------------------------------
+[06:11:59.512]---LOGGER START[EegDataSource.dll]----
+[06:11:59.522]---build date : Feb  6 2018 18:57:06
+[06:11:59.522]---dll ver    : V01.04
+[06:11:59.522]---cur. tick  : 0x0329DCA5
+[06:11:59.522]---log level=1/log func=ALL/folder=.\E12DSLog\
+[06:11:59.522]--------------------------------------
+[06:11:59.522][EEegDataSourceApp::Initialize]...
+[06:11:59.524][EDataSourceCtrl::ReaderModeInitialize]<BE07B5F0>...SelectDataSource(1)
+[06:13:55.022]--------------------------------------
+[06:13:55.022]---LOGGER START[EegDataSource.dll]----
+[06:13:55.022]---build date : Feb  6 2018 18:57:06
+[06:13:55.022]---dll ver    : V01.04
+[06:13:55.023]---cur. tick  : 0x032B9FE1
+[06:13:55.023]---log level=1/log func=ALL/folder=.\E12DSLog\
+[06:13:55.023]--------------------------------------
+[06:13:55.023][EEegDataSourceApp::Initialize]...
+[06:13:55.025][EDataSourceCtrl::ReaderModeInitialize]<FCBBAD70>...SelectDataSource(1)

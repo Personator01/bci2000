@@ -1,0 +1,5 @@
+﻿  XLDataExportClient.cpp
+  XLDataExportReceiver.cpp
+  Generating Code...
+     Creating library ./Bin.Release/XLDataExportClient.lib and object ./Bin.Release/XLDataExportClient.exp
+  XLDataExportClient.vcxproj -> C:\Users\BCIcomputer01\Documents\BCI2000_rev1\src\private\SignalSource\NatusSignalSource92\DataExport_9.2\XLDataExportClient\.\Bin.Release\XLDataExportClient.dll

@@ -1,0 +1,102 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "..\\resource.h"
+//#include "\TargetVersion\version.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef XL_TARGET_LANG
+#include "winres.h"
+#endif // !XL_TARGET_LANG
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_XLDATAEXPORTRECEIVER REGISTRY DISCARDABLE    "..\\res\\XLDataExportReceiver.rgs"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "//Do not include afxres.h when compiling target language resources files based on this one\r\n"
+    "//but allow inclusion when target language files are loaded in DevStudio individually\r\n"
+    "#ifndef XL_TARGET_LANG\r\n"
+    "#include ""winres.h""\r\n"
+    "#endif // !XL_TARGET_LANG\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""XLDataExportClient.tlb""\r\n"
+    "#ifndef XL_TARGET_LANG\r\n"
+    "#include ""..\\res\\XLDataExportClient.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#define XL_TARGET_LANG    // Set this so that includes in target rc files are not included again\r\n"
+    "#include ""..\\TargetLang.rc""\r\n"
+    "#endif // XL_TARGET_LANG\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "XLDataExportClient"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "XLDataExportClient.tlb"
+
+#ifndef XL_TARGET_LANG
+#include "..\res\XLDataExportClient.rc2"  // non-Microsoft Visual C++ edited resources
+#define XL_TARGET_LANG    // Set this so that includes in target rc files are not included again
+#include "..\TargetLang.rc"
+#endif // XL_TARGET_LANG
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,3 @@
+C:/Users/schalkadmin/Desktop/BCI2000/src/private/SignalProcessing/TBSIStimulator/ApiTest/ApiTest/build/CMakeFiles/ApiTest.dir
+C:/Users/schalkadmin/Desktop/BCI2000/src/private/SignalProcessing/TBSIStimulator/ApiTest/ApiTest/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/schalkadmin/Desktop/BCI2000/src/private/SignalProcessing/TBSIStimulator/ApiTest/ApiTest/build/CMakeFiles/ZERO_CHECK.dir

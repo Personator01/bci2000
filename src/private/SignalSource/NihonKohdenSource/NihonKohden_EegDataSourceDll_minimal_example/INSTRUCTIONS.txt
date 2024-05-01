@@ -1,0 +1,7 @@
+*Run Debug/NihonKohdenTest.exe from a command prompt.
+*Observe that it works (connects).
+*Run x64/Debug/NihonKohdenTest.exe from a command prompt.
+*Observe that it crashes after the "LoadDll" step.
+*Running the 64 bit version in a debugger, you will see 
+ that it crashes with a segmentation violation 
+ inside InitializeReaderMode().

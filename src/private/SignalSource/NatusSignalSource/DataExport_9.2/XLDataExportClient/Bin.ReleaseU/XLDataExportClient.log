@@ -1,0 +1,50 @@
+﻿  Processing .\XLDataExportClient.idl
+  XLDataExportClient.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\oaidl.idl
+  oaidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\objidl.idl
+  objidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\unknwn.idl
+  unknwn.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\wtypes.idl
+  wtypes.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\wtypesbase.idl
+  wtypesbase.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\basetsd.h
+  basetsd.h
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\shared\guiddef.h
+  guiddef.h
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\ocidl.idl
+  ocidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\oleidl.idl
+  oleidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\servprov.idl
+  servprov.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\urlmon.idl
+  urlmon.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\msxml.idl
+  msxml.idl
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\oaidl.acf
+  oaidl.acf
+  Processing C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\ocidl.acf
+  ocidl.acf
+  StdAfx.cpp
+  NatusDataServer.cpp
+c:\users\schalklab\downloads\dataexport_9.2_orig\dataexport_9.2\natusservice\natusdataserver.cpp(197): warning C4018: '<': signed/unsigned mismatch
+c:\users\schalklab\downloads\dataexport_9.2_orig\dataexport_9.2\natusservice\natusdataserver.cpp(200): warning C4018: '<': signed/unsigned mismatch
+c:\users\schalklab\downloads\dataexport_9.2_orig\dataexport_9.2\natusservice\natusdataserver.cpp(208): warning C4018: '<': signed/unsigned mismatch
+c:\users\schalklab\downloads\dataexport_9.2_orig\dataexport_9.2\natusservice\natusdataserver.cpp(213): warning C4018: '<': signed/unsigned mismatch
+c:\users\schalklab\downloads\dataexport_9.2_orig\dataexport_9.2\natusservice\natusdataserver.cpp(349): warning C4018: '<': signed/unsigned mismatch
+c:\users\schalklab\downloads\dataexport_9.2_orig\dataexport_9.2\natusservice\natusdataserver.cpp(400): warning C4018: '<': signed/unsigned mismatch
+c:\users\schalklab\downloads\dataexport_9.2_orig\dataexport_9.2\natusservice\natusdataserver.cpp(416): warning C4018: '<': signed/unsigned mismatch
+c:\users\schalklab\downloads\dataexport_9.2_orig\dataexport_9.2\natusservice\natusdataserver.cpp(519): warning C4018: '<': signed/unsigned mismatch
+  NatusPackageInterface.cpp
+  XLDataExportClient.cpp
+  XLDataExportReceiver.cpp
+c:\users\schalklab\downloads\dataexport_9.2_orig\dataexport_9.2\xldataexportclient\xldataexportreceiver.cpp(131): warning C4244: '=': conversion from 'long' to 'uint16_t', possible loss of data
+c:\users\schalklab\downloads\dataexport_9.2_orig\dataexport_9.2\xldataexportclient\xldataexportreceiver.cpp(132): warning C4244: '=': conversion from 'double' to 'uint16_t', possible loss of data
+  Generating Code...
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1216,5): warning MSB8012: TargetPath(C:\Users\schalklab\Downloads\DataExport_9.2_orig\DataExport_9.2\XLDataExportClient\./Bin.ReleaseU\XLDataExportClient.dll) does not match the Linker's OutputFile property value (C:\Users\schalklab\Downloads\DataExport_9.2_orig\DataExport_9.2\XLDataExportClient\Bin.ReleaseU\XLDataExportClientU.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1218,5): warning MSB8012: TargetName(XLDataExportClient) does not match the Linker's OutputFile property value (XLDataExportClientU). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library ./Bin.ReleaseU/XLDataExportClientU.lib and object ./Bin.ReleaseU/XLDataExportClientU.exp
+  XLDataExportClient.vcxproj -> C:\Users\schalklab\Downloads\DataExport_9.2_orig\DataExport_9.2\XLDataExportClient\./Bin.ReleaseU\XLDataExportClient.dll

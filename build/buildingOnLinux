@@ -1,0 +1,4 @@
+use clang
+
+include <cstdint> in the following files (why is it not included already):
+shared/types/CfgId.h 

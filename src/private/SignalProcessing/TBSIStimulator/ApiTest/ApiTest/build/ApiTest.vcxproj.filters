@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\schalkadmin\Desktop\BCI2000\src\private\SignalProcessing\TBSIStimulator\ApiTest\ApiTest\ApiTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\schalkadmin\Desktop\BCI2000\src\private\SignalProcessing\TBSIStimulator\ApiTest\ApiTest\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{259A8F9A-9E02-38C3-A6E7-E190B8D9B2C9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

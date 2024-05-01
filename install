@@ -1,0 +1,57 @@
+#/bin/sh
+read -p "Please drag and drop your Qt folder, then press ENTER: " qt_dir
+echo "Using Qt located at ${qt_dir}"
+
+echo "Beginning Installation..."
+
+cd "$(dirname "$0" )"
+
+echo "Installing Dependencies..."
+
+brew --version > /dev/null
+if [ "$?" -ne 0 ]
+then
+	mkdir src/extlib/homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C src/extlib/homebrew
+	BREW=src/extlib/homebrew/bin/brew
+else
+	BREW=brew
+fi
+
+pkg-config --help 2>&1 > /dev/null
+if [ "$?" -ne 0 ]
+then
+	echo "Installing pkg-config"
+	${BREW} install pkg-config
+	PKGCONFIG=src/extlib/homebrew/bin/pkg-config
+else
+	echo "pkg-config already installed"
+	PKGCONFIG=pkg-config
+fi
+
+echo "Installing FFMPEG ( 1 / 3 )..."
+$PKGCONFIG libavcodec
+if [[ "$?" -ne 0 && ! -d ${BREW}/../../Cellar/ffmpeg@4 ]]
+then
+	${BREW} install ffmpeg@4
+	${BREW} link ffmpeg@4
+fi
+
+echo "Installing PortAudio ( 2 / 3 )..."
+$PKGCONFIG portaudio-2.0
+if [[ "$?" -ne 0 && ! -d ${BREW}/../../Cellar/portaudio ]]
+then
+	${BREW} install portaudio
+fi
+
+echo "Installing SDL2 ( 3 / 3 )..."
+$PKGCONFIG SDL2
+if [[ "$?" -ne 0 && ! -d ${BREW}/../../Cellar/portaudio ]]
+then
+	${BREW} install sdl2
+fi
+
+cd build
+
+echo "Beginning build..."
+
+cmake . -DCMAKE_PREFIX_PATH=${qt_dir} && make -j `getconf _NPROCESSORS_ONLN`

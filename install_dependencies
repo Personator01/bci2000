@@ -1,0 +1,79 @@
+#/bin/sh
+
+brew --version > /dev/null
+if [ "$?" -ne 0 ]
+then
+	mkdir src/extlib/homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C src/extlib/homebrew
+	BREW=src/extlib/homebrew/bin/brew
+else
+	BREW=brew
+fi
+
+pkg-config --help 2>&1 > /dev/null
+if [ "$?" -ne 0 ]
+then
+	echo "Installing pkg-config"
+	${BREW} install pkg-config
+	PKGCONFIG=src/extlib/homebrew/bin/pkg-config
+else
+	echo "pkg-config already installed"
+	PKGCONFIG=pkg-config
+fi
+
+echo "Installing FFMPEG ( 1 / 4 )..."
+$PKGCONFIG libavcodec
+if [[ "$?" -ne 0 && ! -d ${BREW}/../../Cellar/ffmpeg@4 ]]
+then
+	${BREW} install ffmpeg@4
+	${BREW} link ffmpeg@4
+fi
+
+echo "Installing PortAudio ( 2 / 4 )..."
+$PKGCONFIG portaudio-2.0
+if [[ "$?" -ne 0 && ! -d ${BREW}/../../Cellar/portaudio ]]
+then
+	${BREW} install portaudio
+fi
+
+echo "Installing libsndfile ( 3 / 4 )..."
+$PKGCONFIG sndfile
+if [[ "$?" -ne 0 && ! -d ${BREW}/../../Cellar/sndfile ]]
+then
+	${BREW} install libsndfile
+fi
+
+echo "Installing SDL2 ( 4 / 4 )..."
+$PKGCONFIG SDL2
+if [[ "$?" -ne 0 && ! -d ${BREW}/../../Cellar/portaudio ]]
+then
+	${BREW} install sdl2
+fi
+
+
+#cd ../src/extlib/homebrew
+#PREFIX=`pwd`
+#
+##FFMPEG
+#git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg
+#cd ffmpeg
+#git checkout release/4.4
+#./configure --prefix=${PREFIX}
+#make
+#make install
+#cd ..
+#
+##PORTAUDIO
+#git clone https://github.com/PortAudio/portaudio.git
+#cd portaudio
+#./configure --prefix=${PREFIX}
+#make
+#make install
+#cd ..
+#
+##SDL2
+#git clone https://github.com/libsdl-org/SDL.git
+#cd SDL
+#./confiure --prefix=${PREFIX}
+#make
+#make install
+#cd ..

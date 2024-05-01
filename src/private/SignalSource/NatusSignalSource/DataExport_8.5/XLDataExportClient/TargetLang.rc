@@ -1,0 +1,32 @@
+// Target Language resource files
+//
+#include "PseudoLang.h" // Central defines that control what, if any Pseudo Language to use
+//
+//
+#if XL_PSEUDO_GERMAN != 1
+#include "German\XLDataExportClient.rc"
+#endif
+//
+#if XL_PSEUDO_SPANISH != 1
+#include "Spanish\XLDataExportClient.rc"
+#endif
+//
+#if XL_PSEUDO_FRENCH != 1
+#include "French\XLDataExportClient.rc"
+#endif
+//
+#if XL_PSEUDO_RUSSIAN != 1
+#pragma code_page(1251)
+#include "Russian\XLDataExportClient.rc"
+#endif
+//
+#if XL_PSEUDO_CHINESE != 1
+#include "Chinese\XLDataExportClient.rc"
+#endif
+//
+
+#if XL_PSEUDO_JAPANESE != 1
+#include "Japanese\XLDataExportClient.rc"
+#endif
+//
+

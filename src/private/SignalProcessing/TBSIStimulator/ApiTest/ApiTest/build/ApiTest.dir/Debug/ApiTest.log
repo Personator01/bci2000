@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/Users/schalkadmin/Desktop/BCI2000/src/private/SignalProcessing/TBSIStimulator/ApiTest/ApiTest/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/schalkadmin/Desktop/BCI2000/src/private/SignalProcessing/TBSIStimulator/ApiTest/ApiTest/build/CMakeFiles/generate.stamp is up-to-date.
+  ApiTest.cpp
+  ApiTest.vcxproj -> C:\Users\schalkadmin\Desktop\BCI2000\src\private\SignalProcessing\TBSIStimulator\ApiTest\ApiTest\build\Debug\ApiTest.exe

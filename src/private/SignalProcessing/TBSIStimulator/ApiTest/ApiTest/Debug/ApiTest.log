@@ -1,0 +1,4 @@
+﻿  ApiTest.cpp
+c:\users\schalkadmin\desktop\bci2000\src\private\signalprocessing\tbsistimulator\tbsiapi\tbsiapi.h(45): warning C4091: '__declspec(dllimport)': ignored on left of 'TBSI_API_RESULT' when no variable is declared
+c:\users\schalkadmin\desktop\bci2000\src\private\signalprocessing\tbsistimulator\tbsiapi\tbsiapi.h(78): warning C4141: 'dllimport': used more than once
+LINK : fatal error LNK1104: cannot open file 'SLAB_USB_SPI.lib'

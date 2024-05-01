@@ -1,0 +1,21 @@
+Logfile for CXLDataExportReceiver
+Starting server on port 1030
+Starting UDP server on port 1031
+ErrorCallback callback set
+NatusInformationRequest callback set
+NatusChannelInformationRequest callback set
+Connected to new client from: 192.168.1.158
+Answering GetInformation command
+Answering GetChannelNames command
+Received SetBlockSize command
+Blocksize changed to 64
+Decimation Factor changed to 1
+Answering Select Channels command
+Number of Channels to stream: 148
+Answering ping command
+Answering ping command
+Answering StartStream command
+Starting to stream data with 148 Channels
+Disconnecting
+UnregisterCallbacks
+StopExportData has been called! 

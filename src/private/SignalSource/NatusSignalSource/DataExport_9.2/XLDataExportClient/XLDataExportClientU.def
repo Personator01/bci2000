@@ -1,0 +1,9 @@
+; XLDataExportClientU.def : Declares the module parameters.
+
+LIBRARY      "XLDataExportClientU.DLL"
+
+EXPORTS
+	DllCanUnloadNow private
+	DllGetClassObject private
+	DllRegisterServer private
+	DllUnregisterServer private

@@ -1,0 +1,20 @@
+[06:05:44.067]--------------------------------------
+[06:05:44.067]---LOGGER START[EegDataSource.dll]----
+[06:05:44.067]---build date : Apr  7 2014 15:26:41
+[06:05:44.067]---dll ver    : V01.04
+[06:05:44.067]---cur. tick  : 0x03242208
+[06:05:44.067]---log level=1/log func=ALL/folder=.\E12DSLog\
+[06:05:44.067]--------------------------------------
+[06:05:44.067][EEegDataSourceApp::Initialize]...
+[06:05:44.069][EDataSourceCtrl::ReaderModeInitialize]<02AFA0B8>...SelectDataSource(1)
+[06:05:50.654][EDataSourceCtrl::ReaderModeInitialize]<02AFA0B8>...ExtendLine(1), IpAddress(192.168.1.200)
+[06:05:50.655][EDataSourceCtrl::ReaderModeInitialize]<02AFA0B8>...Finished(0).
+[06:05:50.655][EDataSourceCtrl::ReaderModeConnect]<02AFA0B8>...
+[06:05:50.655][EDataSourceMMFileMgr::OpenMMFile]  ExtendLine:1  IpAddress:192.168.1.200
+[06:05:50.655][EDataSourceMMFileMgr::OpenMMFile]  Open MMFile succeeded.  FileName:EEGDATA_EXTEND_00
+[06:05:50.655][EDataSourceCtrl::ReaderModeConnect]<02AFA0B8>...Finished(0).
+[06:05:50.656][EDataSourceCtrl::ReaderModeClose]<02AFA0B8>...
+[06:05:50.656][EDataSourceCtrl::ReaderModeClose]<02AFA0B8>...Finished(0).
+[06:05:50.656][EDataSourceCtrl::ReaderModeEnd]<02AFA0B8>...
+[06:05:50.656][EDataSourceCtrl::ReaderModeEnd]<02AFA0B8>...Finished(0).
+[06:05:50.656][EEegDataSourceApp::ExitInstance]...

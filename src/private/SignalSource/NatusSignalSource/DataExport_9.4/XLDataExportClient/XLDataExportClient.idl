@@ -1,0 +1,83 @@
+// XLDataExportClient.idl : IDL source for XLDataExportClient.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (XLDataExportClient.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+// duplicated in EpochDataBridge, DataBridgeInterface
+
+typedef long long TStamp;
+typedef long TStampLegacy;
+
+	struct XLDataExportPatientMetadata
+	{
+		BSTR firstName;
+		BSTR lastName;
+		BSTR guid;
+	};
+
+	typedef [v1_enum] enum _StudyType
+	{
+		STUDY_EEG_TYPE = 0,
+		STUDY_SLEEP_TYPE
+	} StudyType;
+
+	struct XLDataExportStudyMetadata
+	{
+		BSTR studyName;
+		BSTR fileName;
+		BSTR guid;
+		StudyType studyType;
+		long headboxType;
+		long numberOfChannels;
+		double samplingFreq;
+		__int64 xlCreationTime;
+	};
+
+	[
+		object,
+		uuid(18B4D726-C3C0-415A-A8F9-FC6EB680C37D),
+	
+		helpstring("IXLDataExportReceiver Interface"),
+		pointer_default(unique)
+	]
+	interface IXLDataExportReceiver : IUnknown
+	{
+		[helpstring("method StartExportData")] HRESULT StartExportData([in] struct XLDataExportPatientMetadata patient, [in] struct XLDataExportStudyMetadata study);
+		[helpstring("method StopExportData")] HRESULT StopExportData();
+		[helpstring("method PassExportData")] HRESULT PassExportData( [in] TStamp samplestamp, [in] short numberOfChannels, [in, size_is(numberOfChannels)] float wave_data[]);
+	};
+
+[
+	uuid(B7B249CB-1CDC-49D1-83B6-37F7EEF57741),
+	version(1.0),
+	helpstring("XLDataExportClient 1.0 Type Library")
+]
+library XLDATAEXPORTCLIENTLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(D9B66E4B-899F-4400-846A-C3AD36764E7D),
+		helpstring("_IXLDataExportReceiverEvents Interface")
+	]
+	dispinterface _IXLDataExportReceiverEvents
+	{
+		properties:
+		methods:
+	};
+
+	[
+		uuid(301D67B5-E7CA-46AD-AAEB-48FDE538CBF4),
+		helpstring("XLDataExportReceiver Class")
+	]
+	coclass XLDataExportReceiver
+	{
+		[default] interface IXLDataExportReceiver;
+		[default, source] dispinterface _IXLDataExportReceiverEvents;
+	};
+};

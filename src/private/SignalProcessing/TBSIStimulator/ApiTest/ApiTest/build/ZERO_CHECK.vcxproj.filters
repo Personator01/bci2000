@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\schalkadmin\Desktop\BCI2000\src\private\SignalProcessing\TBSIStimulator\ApiTest\ApiTest\build\CMakeFiles\7186be7adaec3b1f3cdedf2bee7f8bb2\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{2F3909D8-AF90-3ADF-AE31-13941AB0AAE4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

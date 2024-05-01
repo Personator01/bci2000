@@ -1,0 +1,25 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (.\Bin.DebugU\) contains files shared from another project (XLDataExportClient_9.2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  XLDataExportReceiver.cpp
+C:\BCI2000.x64\src\private\SignalSource\NatusSignalSource\DataExport_9.2\XLDataExportClient\XLDataExportReceiver.cpp(131,42): warning C4244: '=': conversion from 'long' to 'uint16_t', possible loss of data
+C:\BCI2000.x64\src\private\SignalSource\NatusSignalSource\DataExport_9.2\XLDataExportClient\XLDataExportReceiver.cpp(132,38): warning C4244: '=': conversion from 'double' to 'uint16_t', possible loss of data
+  XLDataExportClient.cpp
+  StdAfx.cpp
+  NatusPackageInterface.cpp
+C:\BCI2000.x64\src\private\SignalSource\NatusSignalSource\NatusService\stdafx.h(12,1): warning C4005: 'STRICT': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(23): message : see previous definition of 'STRICT'
+  NatusDataServer.cpp
+C:\BCI2000.x64\src\private\SignalSource\NatusSignalSource\NatusService\stdafx.h(12,1): warning C4005: 'STRICT': macro redefinition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(23): message : see previous definition of 'STRICT'
+C:\BCI2000.x64\src\private\SignalSource\NatusSignalSource\NatusService\NatusDataServer.cpp(200,22): warning C4018: '<': signed/unsigned mismatch
+C:\BCI2000.x64\src\private\SignalSource\NatusSignalSource\NatusService\NatusDataServer.cpp(203,22): warning C4018: '<': signed/unsigned mismatch
+C:\BCI2000.x64\src\private\SignalSource\NatusSignalSource\NatusService\NatusDataServer.cpp(211,22): warning C4018: '<': signed/unsigned mismatch
+C:\BCI2000.x64\src\private\SignalSource\NatusSignalSource\NatusService\NatusDataServer.cpp(216,22): warning C4018: '<': signed/unsigned mismatch
+C:\BCI2000.x64\src\private\SignalSource\NatusSignalSource\NatusService\NatusDataServer.cpp(321,21): warning C4018: '<': signed/unsigned mismatch
+C:\BCI2000.x64\src\private\SignalSource\NatusSignalSource\NatusService\NatusDataServer.cpp(366,22): warning C4018: '<': signed/unsigned mismatch
+C:\BCI2000.x64\src\private\SignalSource\NatusSignalSource\NatusService\NatusDataServer.cpp(379,21): warning C4018: '<': signed/unsigned mismatch
+C:\BCI2000.x64\src\private\SignalSource\NatusSignalSource\NatusService\NatusDataServer.cpp(508,20): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetPath(C:\BCI2000.x64\src\private\SignalSource\NatusSignalSource\DataExport_9.2\XLDataExportClient\Bin.DebugU\XLDataExportClient.dll) does not match the Linker's OutputFile property value (C:\BCI2000.x64\src\private\SignalSource\NatusSignalSource\DataExport_9.2\XLDataExportClient\Bin.DebugU\XLDataExportClientU.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1365,5): warning MSB8012: TargetName(XLDataExportClient) does not match the Linker's OutputFile property value (XLDataExportClientU). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library ./Bin.DebugU/XLDataExportClientU.lib and object ./Bin.DebugU/XLDataExportClientU.exp
+  XLDataExportClient.vcxproj -> C:\BCI2000.x64\src\private\SignalSource\NatusSignalSource\DataExport_9.2\XLDataExportClient\Bin.DebugU\XLDataExportClient.dll
