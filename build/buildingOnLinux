@@ -1,4 +1,13 @@
 use clang
 
+Operator:
 include <cstdint> in the following files (why is it not included already):
 shared/types/CfgId.h 
+shared/types/VisID.h
+
+include <algorithm> in the following files
+shared/utils/AV/AVLog.cpp 
+
+force cmake to use qt5 by removing the cmake code referencing qt6 in cmake/extlib/QT.cmake
+
+DummySignalProcessing:

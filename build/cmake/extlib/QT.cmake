@@ -41,14 +41,9 @@ ENDIF()
 set(QT_AVAILABLE FALSE)
 set(qtmajor)
 set(QT_NO_CREATE_VERSIONLESS_FUNCTIONS 1)
-find_package(Qt6 COMPONENTS ${QT_MODULES} QUIET)
-if(Qt6_DIR)
-  set(qtmajor 6)
-else()
-  find_package(Qt5 COMPONENTS ${QT_MODULES} QUIET)
-  if(Qt5_DIR)
-    set(qtmajor 5)
-  endif()
+find_package(Qt5 COMPONENTS ${QT_MODULES} QUIET)
+if(Qt5_DIR)
+  set(qtmajor 5)
 endif()
 
 if(Qt5_DIR) # defined by find_package on success
@@ -74,29 +69,29 @@ if(Qt5_DIR) # defined by find_package on success
 
 endif()
 
-if(Qt6_DIR) # defined by find_package on success
-  set(QT_AVAILABLE TRUE)
-  if(WIN32)
-    find_program( QT_QMAKE_EXECUTABLE qmake NO_DEFAULT_PATH PATHS ${Qt6_DIR}/../../../bin )
-  else()
-    find_program( QT_QMAKE_EXECUTABLE qmake )
-  endif()
-  if( NOT QT_QMAKE_EXECUTABLE )
-    set(QT_AVAILABLE FALSE)
-  endif()
-
-  macro( QT_WRAP_CPP )
-    qt6_wrap_cpp( ${ARGN} )
-  endmacro()
-  macro( QT_WRAP_UI )
-    qt6_wrap_ui( ${ARGN} )
-  endmacro()
-  macro( QT_ADD_RESOURCES )
-    qt6_add_resources( ${ARGN} )
-  endmacro()
-
-endif()
-
+# if(Qt6_DIR) # defined by find_package on success
+#   set(QT_AVAILABLE TRUE)
+#   if(WIN32)
+#     find_program( QT_QMAKE_EXECUTABLE qmake NO_DEFAULT_PATH PATHS ${Qt6_DIR}/../../../bin )
+#   else()
+#     find_program( QT_QMAKE_EXECUTABLE qmake )
+#   endif()
+#   if( NOT QT_QMAKE_EXECUTABLE )
+#     set(QT_AVAILABLE FALSE)
+#   endif()
+#
+#   macro( QT_WRAP_CPP )
+#     qt6_wrap_cpp( ${ARGN} )
+#   endmacro()
+#   macro( QT_WRAP_UI )
+#     qt6_wrap_ui( ${ARGN} )
+#   endmacro()
+#   macro( QT_ADD_RESOURCES )
+#     qt6_add_resources( ${ARGN} )
+#   endmacro()
+#
+# endif()
+#
 if(QT_AVAILABLE)
   # report version
   GET_QT_VERSION( qtver_ )

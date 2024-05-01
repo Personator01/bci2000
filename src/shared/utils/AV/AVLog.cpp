@@ -30,6 +30,8 @@
 
 #include <vector>
 
+#include <algorithm>
+
 extern "C" {
 #include <libavutil/opt.h>
 }
